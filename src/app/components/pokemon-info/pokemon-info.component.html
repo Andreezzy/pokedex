@@ -1,0 +1,22 @@
+<div class="page-header">
+  <h1>{{pokemon.name}}</h1>
+  <ul class="pager">
+    <li class="previous"><a [routerLink]="['/pokemones']">&larr; Volver</a></li>
+  </ul>
+</div>
+<div class="row">
+  <div class="col-md-3">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel info</h3>
+      </div>
+      <div class="panel-body">
+        <a [routerLink]="['/pokemon', pokemon.id]"><img class="img-responsive" src={{pokemon.imagen}}></a>
+      </div>
+      <div class="panel-footer">{{pokemon.name}}</div>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <p>{{pokemon.bio}}</p>
+  </div>
+</div>

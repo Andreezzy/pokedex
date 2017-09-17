@@ -1,0 +1,16 @@
+<div class="page-header">
+  <h1>Pokemones</h1>
+</div>
+<div class="row">
+  <div class="col-md-3" *ngFor="let pokemon of pokemones">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel info</h3>
+      </div>
+      <div class="panel-body">
+        <a [routerLink]="['/pokemon', pokemon.id]"><img class="img-responsive" src={{pokemon.imagen}}></a>
+      </div>
+      <div class="panel-footer">{{pokemon.name}}</div>
+    </div>
+  </div>
+</div>
